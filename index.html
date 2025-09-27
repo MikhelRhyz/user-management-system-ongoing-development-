@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice - User Management</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        .container { 
+            background: #f5f5f5; 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin-bottom: 20px;
+        }
+        button { 
+            padding: 10px 15px; 
+            margin: 5px; 
+            cursor: pointer; 
+        }
+        .user-card { 
+            background: white; 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 5px; 
+            border-left: 4px solid #007bff;
+        }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Practice: User Management System</h1>
+    
+    <!-- Part 1: User Creation Form -->
+    <div class="container">
+        <h2>1. Create User (Objects & DOM)</h2>
+        <form id="userForm">
+            <input type="text" id="userName" placeholder="Name" required>
+            <input type="email" id="userEmail" placeholder="Email" required>
+            <button type="submit" id="createUserBtn">Create User</button>
+        </form>
+    </div>
+
+    <!-- Part 2: User List Display -->
+    <div class="container">
+        <h2>2. User List (Iterations & DOM)</h2>
+        <div id="userList"></div>
+    </div>
+
+    <!-- Part 3: Class Implementation -->
+    <div class="container">
+        <h2>3. User Class (Classes)</h2>
+        <button onclick="testUserClass()">Test User Class</button>
+        <div id="classTest"></div>
+    </div>
+
+    <!-- Part 4: Promises & Async Operations -->
+    <div class="container">
+        <h2>4. Promises & Async Operations</h2>
+        <button onclick="simulateApiCall()">Simulate API Call (Promise)</button>
+        <button onclick="fetchRandomUser()">Fetch Random User (Async/Await)</button>
+        <div id="promiseResult"></div>
+    </div>
+
+    <!-- Part 5: Modules Practice -->
+    <div class="container">
+        <h2>5. ES6 Modules</h2>
+        <button onclick="loadUserModule()">Load User Module</button>
+        <div id="moduleResult"></div>
+    </div>
+
+    <!-- Part 6: Advanced Features -->
+    <div class="container">
+        <h2>6. Advanced JavaScript</h2>
+        <button onclick="practiceClosures()">Practice Closures</button>
+        <button onclick="practiceDestructuring()">Practice Destructuring</button>
+        <div id="advancedResult"></div>
+    </div>
+
+    <!-- Your JavaScript files will be loaded here -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
